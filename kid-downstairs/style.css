@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px 32px;
+  font-family: "Noto Sans TC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: radial-gradient(circle at top, #0d1b2a, #06101f 60%, #030712 100%);
+  color: #f8f9fa;
+}
+
+.wrapper {
+  width: min(100%, 480px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.hud h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  letter-spacing: 0.08em;
+}
+
+.hud p {
+  margin: 12px 0 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: rgba(248, 249, 250, 0.85);
+}
+
+canvas {
+  width: min(100%, 360px);
+  height: auto;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #001233 0%, #001845 100%);
+  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.35);
+  touch-action: none;
+}
+
+.no-script {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 16px;
+  }
+
+  .hud p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>小朋友下樓梯 · Canvas 小遊戲</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="hud">
+        <h1>小朋友下樓梯</h1>
+        <p>
+          使用鍵盤的左右方向鍵或 A / D 來移動小朋友，讓他順著樓梯一路往下。
+          手機或平板上可以直接點按畫面左右兩側。盡量踩好每一階樓梯，不要跌落到畫面底部！
+        </p>
+      </header>
+      <canvas
+        id="game"
+        width="360"
+        height="640"
+        role="img"
+        aria-label="小朋友下樓梯遊戲主畫面"
+      ></canvas>
+      <noscript class="no-script">需要啟用 JavaScript 才能開始遊戲。</noscript>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
